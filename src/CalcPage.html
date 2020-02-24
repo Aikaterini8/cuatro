@@ -1,0 +1,62 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Cost Calculator</title>
+<link rel="stylesheet" href="CalcCSS.css">
+</head>
+<body>
+	
+	<div class="topnav">
+ 		<a href="CalcPage.jsp">New Calculation</a>
+	</div>
+	
+	<div class="row">
+  		<div class="columnCreated">
+  		
+    		<h1>Cost Calculation</h1>	
+  	</div>
+	
+	<form name="Calculator" method="POST" action="CostCalculation/CalcServlet">
+	<div class="row">
+  		
+  		<div class="columnContainer" style="text-align: left">
+  		
+  				<h3>Height: <input type="number" name="height" min="1.00" max="3" step="0.01" value='1.00'/> m</h3>
+    			<h3>Width: <input type="number" name="width" min="1.00" max="2.40" step="0.01" value='1.00'/> m</h3>
+    			
+    			<h3>Isia:</h3>
+    			<input type="radio" name="type" checked="checked" value="isia_14x17"/>14x17
+    			<input type="radio" name="type" value="isia_14x19"/>14x19
+    			<input type="radio" name="type" value="isia_17x17"/>17x17
+    			<input type="radio" name="type" value="isia_18x19"/>18x19
+    			<input type="radio" name="type" value="isia_20x20"/>20.6x20.6
+    			
+    			<h3>Pompe:</h3>
+    			<input type="radio" name="type" value="pompe_14x19"/>14x19
+    			<input type="radio" name="type" value="pompe_15x18"/>15.5x18.5
+    			<input type="radio" name="type" value="pompe_14x19"/>18x19
+    			<input type="radio" name="type" value="pompe_20x20"/>20.6x20.6
+    			
+    			<h3>Odhgos:</h3>
+    			<input type="radio" name="odhgos" checked="checked" value="no"/>Oxi
+    			<input type="radio" name="odhgos" value="yes"/>Nai
+    			
+    			<h3>Aksonas katwkasi:</h3>
+    			<input type="radio" name="aksonas" checked="checked" value="no"/>Oxi
+    			<input type="radio" name="aksonas" value="yes"/>Nai
+  		</div>
+ 		
+ 	</div>
+ 		 
+ 	<div class="row" style="text-align: left">
+ 		<br>
+ 		<input type="submit" value="Submit Selection"/>
+ 	</div>
+  	</form>
+	</div>
+	
+</body>
+</html>

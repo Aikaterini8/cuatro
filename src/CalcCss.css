@@ -1,0 +1,277 @@
+@charset "ISO-8859-1";
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;	
+}
+
+.centerIn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+table {
+	text-align: center;
+	border-collapse:seperate;
+    border:solid black 1px;
+    border-radius:6px;
+    -moz-border-radius:6px
+}
+
+
+body {
+  margin: 0;
+  background-color: white;
+  font-family: Trebuchet MS;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+  background-color: white;
+}
+
+.column2 {
+	float: left;
+	width: 33.3%;
+	padding: 15px;
+	background-color: white;
+}
+.columnCreated {
+	float: center;
+	width: 100%;
+	padding: 15px;
+	background-color: #ffffff;
+	text-align: center;
+}
+
+.columnContainer{
+	display: table;
+	width:100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  bottom: 0	;
+  width: 100%;
+}
+
+.footerCreated {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+table{
+	align: center;
+	border-right: none;
+	border-left: none;
+	border-collapse: collapse;	
+}
+
+td, th {
+	border-right: none;
+	border-left: none;
+	width: 400px;
+	height: 50px;
+}
+
+th {
+	background-color: #3d5c5c;
+	color: white;
+}
+
+table tr:hover{
+	background-color: #85adad;
+	color: black;
+}
+
+tr:nth-child(even) {
+	background-color: #BDBDBD;
+}
+
+tr:nth-child(odd) {
+	background-color: #F2F2F2;
+}
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.collapsible {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: white;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: white;
+}
+
+#roundText {
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 20px; 
+    width: 500px;
+    height: 15px; 
+    text-align: center;   
+}
+
+input[type=submit] {
+	border-radius: 8px;
+	background-color: #f1f1f1;
+  	color: black;
+}
+/*input[type="text"],  textarea {
+
+  background-color : #d1d1d1; 
+
+}
+input[type="number"], textarea {
+
+  background-color : #d1d1d1; 
+
+}*/
